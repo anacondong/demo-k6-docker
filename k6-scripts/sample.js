@@ -15,7 +15,7 @@ export let options = {
 };
 
 export default function () {
-  const response = http.get("<target API>", {
+  const response = http.get("https://google.com", {
     headers: { Accepts: "application/json" },
   });
   check(response, { "status is 200": (r) => r.status === 200 });
